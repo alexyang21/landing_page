@@ -1,0 +1,97 @@
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$black: #231f20;
+
+/* universal */
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  color: $black;
+  background-image: url('beach.jpeg');
+  background-size: 100%;
+}
+
+ul {
+  list-style-type: circle;
+  li {
+    padding: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  font-family: Georgia;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.4em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: DimGray;
+}
+
+
+/* header */
+
+.black_bar {
+  background: $black;
+  display: block;
+  height: 24px;
+  width: 100%;
+  z-index: 1;
+}
+
+.bottom_bar {
+  bottom: 0;
+  position: absolute;
+  color: #CFD0D2;
+}
+
+/* content */
+
+#container {
+
+}
+
+#content {
+
+}
+
+#box {
+  position: absolute;
+  top: 160px;
+  right: 50px;
+  width: 600px;
+}
+
+#sign_up_link {
+  position: absolute;
+  top: 500px;
+  right: 280px;
+}
+
+/* modal */
+
+#form {
+  margin: 0 20px;
+  width: 500px;
+}
+
+/* footer */
