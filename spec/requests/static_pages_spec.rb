@@ -2,11 +2,11 @@ require 'spec_helper'
 
 describe "StaticPages" do
 
-  describe "Home page" do
-
-    it "should have the content 'Landing Page'" do
-      visit '/static_pages/home'
-      page.should have_content('Landing Page')
-    end
-  end
+	describe "Home Page" do
+		it "should have the title 'Landing Page'" do
+			visit root_path
+			page.should have_selector('title', text: "Landing Page")
+		end
+	end
+	
 end

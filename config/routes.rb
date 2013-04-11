@@ -1,7 +1,7 @@
 LandingPage::Application.routes.draw do
-  root to: 'static_pages#home'
+  get "users/new"
 
-  match '/signup', to: 'static_pages#signup'
+  root to: 'static_pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
