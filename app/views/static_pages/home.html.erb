@@ -11,6 +11,33 @@
 		</ul>
 	</div>
 
+	<div class="row">
+		<div class="span6 offset3">
+			<%= form_for(@user) do |f| %>
+
+				<%= f.label :first_name %>
+				<%= f.text_field :first_name %>
+
+				<%= f.label :last_name %>
+				<%= f.text_field :last_name %>
+
+				<%= f.label :email %>
+				<%= f.text_field :email %>
+
+				<%= f.label :vacation_start %>
+				<%= f.text_field :vacation_start %>
+
+				<%= f.label :vacation_end %>
+				<%= f.text_field :vacation_end %>
+
+				<%= f.label :zipcode %>
+				<%= f.text_field :zipcode %>
+
+				<%= f.submit "Sign Up", class: "btn btn-success" %>
+			<% end %>
+		</div>
+	</div>
+
 	<a id="sign_up_link" href="#sign_up_modal" class="btn btn-large btn-primary" data-toggle="modal">Get started now</a>
 
 	<div class="modal hide fade" id="sign_up_modal" aria-hidden="true">
