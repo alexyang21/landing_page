@@ -19,8 +19,10 @@ html {
 body {
   height: 100%;
   color: $black;
-  background-image: url('beach.jpeg');
+  background-image: url('conch.jpg');
   background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 ul {
