@@ -24,13 +24,14 @@ class User < ActiveRecord::Base
 
   validates :first_name, 		presence: true, length: { maximum: 50 }
   validates :last_name, 		presence: true, length: { maximum: 50 }
-  validates :email, 			presence: true, length: { maximum: 50 },
-  								format: { with: VALID_EMAIL_REGEX }, 
-  								uniqueness: { case_sensitive: false }
+  validates :email, 			  presence: true, length: { maximum: 50 },
+  								format: { with: VALID_EMAIL_REGEX, 
+                    message: "format invalid (name@example.com)" }, 
+  								uniqueness: { case_sensitive: false, message: "already taken" }
   validates :vacation_start, 	presence: true, length: { is: 10 },
-  								format: { with: VALID_DATE }
+  								format: { with: VALID_DATE, message: "format invalid (MM-DD-YYYY)" }
   validates :vacation_end, 		presence: true, length: { is: 10 },
-  								format: { with: VALID_DATE }
+  								format: { with: VALID_DATE, message: "format invalid (MM-DD-YYYY)" }
   validates :zipcode,	 		presence: true, length: { is: 5 },
-  								format: { with: VALID_ZIPCODE }
+  								format: { with: VALID_ZIPCODE, message: "format invalid (12345)" }
 end

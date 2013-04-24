@@ -17,12 +17,12 @@ describe "User pages" do
 
 		describe "with valid information" do
 			before do
-				fill_in "First name",			with: "First"
-				fill_in "Last name", 			with: "Last"
-				fill_in "Email", 				with: "user@example.com"
-				fill_in "Vacation start",	with: "04-10-2013"
-				fill_in "Vacation end", 		with: "04-17-2013"
-				fill_in "Zipcode",				with: "94112"
+				fill_in "user_first_name",			with: "First"
+				fill_in "user_last_name", 			with: "Last"
+				fill_in "user_email", 				with: "user@example.com"
+				fill_in "user_vacation_start",		with: "04-10-2013"
+				fill_in "user_vacation_end", 		with: "04-17-2013"
+				fill_in "user_zipcode",				with: "94112"
 			end
 
 			it "should create a user" do

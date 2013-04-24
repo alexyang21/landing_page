@@ -1,4 +1,9 @@
 <% if @user.errors.any? %>
+  
+  <script type="text/javascript">
+    $('#sign_up_modal').modal('show');
+  </script>
+
   <div id="error_explanation">
     <div class="alert alert-error">
       The form contains <%= pluralize(@user.errors.count, "error") %>.

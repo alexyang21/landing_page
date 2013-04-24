@@ -11,42 +11,18 @@
 		</ul>
 	</div>
 
-	<a id="sign_up_link" href="#sign_up_modal" class="btn btn-large btn-primary" role="button" data-toggle="modal" data-backdrop="static">Get started now</a>
+	<a id="sign_up_link" href="#sign_up_modal" class="btn btn-large btn-primary" 
+					role="button" data-toggle="modal" data-backdrop="static">Get started now</a>
 
-	<div class="modal hide fade" id="sign_up_modal" aria-hidden="true">
+	<div id="sign_up_modal" class="modal hide fade" aria-hidden="true">
 		
 		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<button type="button" class="close" data-dismiss="modal" 
+									aria-hidden="true">&times;</button>
 			<h3>Thanks for your interest!</h1>
 		</div>
 
-		<div class="modal-body">
-<!-- 			<div class="span3 offset1">
-				<%= form_for(@user) do |f| %>
-					<%= render 'shared/error_messages' %> 
-
-					<%= f.label :first_name %>
-					<%= f.text_field :first_name %>
-
-					<%= f.label :last_name %>
-					<%= f.text_field :last_name %>
-
-					<%= f.label :email %>
-					<%= f.email_field :email %>
-
-					<%= f.label :vacation_start %>
-					<%= f.text_field :vacation_start %>
-
-					<%= f.label :vacation_end %>
-					<%= f.text_field :vacation_end %>
-
-					<%= f.label :zipcode %>
-					<%= f.text_field :zipcode %>
-
-					<%= f.submit "Sign Up", class: "btn btn-success" %>
-				<% end %>
-			</div> -->
-			
+		<div class="modal-body">			
 
 			<form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
 				<%= render 'shared/error_messages' %> 
