@@ -60,14 +60,6 @@ h2 {
 
 /* header */
 
-.black_bar {
-  background: $black;
-  display: block;
-  height: 24px;
-  width: 100%;
-  z-index: 1;
-}
-
 .bottom_bar {
   bottom: 0;
   position: absolute;
@@ -76,8 +68,10 @@ h2 {
 
 .logo {
   display: block;
-  margin: 0 auto;
-  top: 0;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
 }
 
 /* content */
