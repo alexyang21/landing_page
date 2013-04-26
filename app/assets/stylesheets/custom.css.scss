@@ -28,6 +28,8 @@ body {
 ul {
   list-style-type: circle;
   li {
+    font-family: 'Donegal One', serif;
+    font-size: 1.4em;
     padding: 10px;
   }
 }
@@ -36,7 +38,7 @@ ul {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
-  font-family: Georgia;
+  font-family: 'Donegal One', serif;
 }
 
 h1 {
@@ -72,6 +74,12 @@ h2 {
   color: #CFD0D2;
 }
 
+.logo {
+  display: block;
+  margin: 0 auto;
+  top: 0;
+}
+
 /* content */
 
 #container {
@@ -84,14 +92,14 @@ h2 {
 
 #box {
   position: absolute;
-  top: 160px;
+  top: 200px;
   right: 50px;
-  width: 600px;
+  width: 700px;
 }
 
 #sign_up_link {
   position: absolute;
-  top: 500px;
+  top: 540px;
   right: 280px;
 }
 
@@ -106,6 +114,7 @@ h2 {
     margin: 0 0 10 10px;
   }
 }
+
 /* forms */
 
 input, textarea, select, .uneditable-input {
